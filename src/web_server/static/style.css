@@ -1,0 +1,98 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1E1E1E;
+    --text-color: #E0E0E0;
+    --accent-color: #03DAC6;
+    --btn-bg: #BB86FC;
+    --btn-text: #000000;
+    --warning-color: #CF6679;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.warning {
+    color: var(--warning-color);
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.status-box {
+    margin-top: 20px;
+    min-height: 20px;
+    font-size: 0.9em;
+}
+
+.loading {
+    color: var(--accent-color);
+}
+
+.error {
+    color: var(--warning-color);
+}
+
+.success {
+    color: #03DAC6;
+}
+
+.input-group {
+    margin: 10px 0;
+    text-align: left;
+}
+
+input[type="number"] {
+    background-color: #2C2C2C;
+    border: 1px solid #444;
+    color: var(--text-color);
+    padding: 8px;
+    border-radius: 4px;
+    width: 60px;
+    margin-left: 10px;
+}

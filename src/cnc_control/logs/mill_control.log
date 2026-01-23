@@ -1,0 +1,88 @@
+2026-01-20 11:07:14,758&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&425&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '1', '$4': '0', '$5': '0', '$6': '0', '$10': '3', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '1', '$22': '1', '$23': '0', '$24': '100.000', '$25': '1000.000', '$26': '250', '$27': '3.000', '$30': '10000', '$31': '0', '$32': '0', '$100': '400.000', '$101': '400.000', '$102': '400.000', '$110': '5000.000', '$111': '5000.000', '$112': '5000.000', '$120': '300.000', '$121': '300.000', '$122': '300.000', '$130': '401.000', '$131': '301.000', '$132': '85.000'}
+2026-01-20 11:07:14,758&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-20 11:07:14,759&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-20 11:17:43,532&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&425&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '1', '$4': '0', '$5': '0', '$6': '0', '$10': '3', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '1', '$22': '1', '$23': '0', '$24': '100.000', '$25': '1000.000', '$26': '250', '$27': '3.000', '$30': '10000', '$31': '0', '$32': '0', '$100': '400.000', '$101': '400.000', '$102': '400.000', '$110': '5000.000', '$111': '5000.000', '$112': '5000.000', '$120': '300.000', '$121': '300.000', '$122': '300.000', '$130': '401.000', '$131': '301.000', '$132': '85.000'}
+2026-01-20 11:17:43,532&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-20 11:17:43,532&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-20 11:17:43,533&grbl_cnc_mill&INFO&mock&connect_to_mill&63&Connecting to the mill
+2026-01-20 11:17:43,733&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 10.0, Y = 20.0, Z = -5.0
+2026-01-20 11:17:43,735&grbl_cnc_mill&INFO&mock&connect_to_mill&63&Connecting to the mill
+2026-01-20 11:17:43,735&grbl_cnc_mill&INFO&mock&set_feed_rate&84&Setting feed rate to 5000
+2026-01-20 11:17:43,735&grbl_cnc_mill&INFO&mock&home&121&Homing the mill
+2026-01-20 11:17:43,735&grbl_cnc_mill&INFO&mock&set_feed_rate&84&Setting feed rate to 5000
+2026-01-20 11:17:43,735&grbl_cnc_mill&INFO&mock&clear_buffers&88&Clearing buffers
+2026-01-20 11:17:43,940&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 0.0, Y = 0.0, Z = 0.0
+2026-01-20 11:17:44,146&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 0.0, Y = 0.0, Z = 0.0
+2026-01-20 11:17:44,349&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 0.0, Y = 0.0, Z = 0.0
+2026-01-20 11:17:44,349&grbl_cnc_mill&DEBUG&driver&_log_target_coordinates&1035&Target coordinates: [1.0, 0.0, 0.0]
+2026-01-20 11:17:44,349&grbl_cnc_mill&ERROR&driver&_validate_target_coordinates&1047&x coordinate out of range
+2026-01-20 11:17:44,349&grbl_cnc_mill&INFO&mock&disconnect&77&Disconnecting from the mill
+2026-01-20 11:17:44,349&grbl_cnc_mill&INFO&driver&__exit__&396&Exiting the mill context manager
+2026-01-20 11:18:30,189&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&425&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '1', '$4': '0', '$5': '0', '$6': '0', '$10': '3', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '1', '$22': '1', '$23': '0', '$24': '100.000', '$25': '1000.000', '$26': '250', '$27': '3.000', '$30': '10000', '$31': '0', '$32': '0', '$100': '400.000', '$101': '400.000', '$102': '400.000', '$110': '5000.000', '$111': '5000.000', '$112': '5000.000', '$120': '300.000', '$121': '300.000', '$122': '300.000', '$130': '401.000', '$131': '301.000', '$132': '85.000'}
+2026-01-20 11:18:30,189&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-20 11:18:30,189&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-20 11:18:30,189&grbl_cnc_mill&INFO&mock&connect_to_mill&63&Connecting to the mill
+2026-01-20 11:18:30,393&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 10.0, Y = 20.0, Z = -5.0
+2026-01-20 11:18:30,394&grbl_cnc_mill&INFO&mock&set_feed_rate&84&Setting feed rate to 5000
+2026-01-20 11:18:30,394&grbl_cnc_mill&INFO&mock&home&121&Homing the mill
+2026-01-20 11:18:30,394&grbl_cnc_mill&INFO&mock&set_feed_rate&84&Setting feed rate to 5000
+2026-01-20 11:18:30,394&grbl_cnc_mill&INFO&mock&clear_buffers&88&Clearing buffers
+2026-01-20 11:18:30,596&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 0.0, Y = 0.0, Z = 0.0
+2026-01-20 11:18:30,801&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 0.0, Y = 0.0, Z = 0.0
+2026-01-20 11:18:31,006&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 0.0, Y = 0.0, Z = 0.0
+2026-01-20 11:18:31,006&grbl_cnc_mill&DEBUG&driver&_log_target_coordinates&1035&Target coordinates: [1.0, 0.0, 0.0]
+2026-01-20 11:18:31,006&grbl_cnc_mill&ERROR&driver&_validate_target_coordinates&1047&x coordinate out of range
+2026-01-20 11:18:31,006&grbl_cnc_mill&INFO&mock&disconnect&77&Disconnecting from the mill
+2026-01-20 11:18:31,006&grbl_cnc_mill&INFO&driver&__exit__&396&Exiting the mill context manager
+2026-01-20 11:18:56,665&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&425&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '1', '$4': '0', '$5': '0', '$6': '0', '$10': '3', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '1', '$22': '1', '$23': '0', '$24': '100.000', '$25': '1000.000', '$26': '250', '$27': '3.000', '$30': '10000', '$31': '0', '$32': '0', '$100': '400.000', '$101': '400.000', '$102': '400.000', '$110': '5000.000', '$111': '5000.000', '$112': '5000.000', '$120': '300.000', '$121': '300.000', '$122': '300.000', '$130': '401.000', '$131': '301.000', '$132': '85.000'}
+2026-01-20 11:18:56,665&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-20 11:18:56,665&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-20 11:18:56,665&grbl_cnc_mill&INFO&mock&connect_to_mill&63&Connecting to the mill
+2026-01-20 11:18:56,871&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 10.0, Y = 20.0, Z = -5.0
+2026-01-20 11:18:56,871&grbl_cnc_mill&INFO&mock&set_feed_rate&84&Setting feed rate to 5000
+2026-01-20 11:18:57,076&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 10.0, Y = 20.0, Z = -5.0
+2026-01-20 11:18:57,280&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = 10.0, Y = 20.0, Z = -5.0
+2026-01-20 11:18:57,280&grbl_cnc_mill&DEBUG&driver&_log_target_coordinates&1035&Target coordinates: [11.0, 20.0, -5.0]
+2026-01-20 11:18:57,281&grbl_cnc_mill&ERROR&driver&_validate_target_coordinates&1047&x coordinate out of range
+2026-01-20 11:18:57,281&grbl_cnc_mill&INFO&mock&disconnect&77&Disconnecting from the mill
+2026-01-20 11:18:57,281&grbl_cnc_mill&INFO&driver&__exit__&396&Exiting the mill context manager
+2026-01-20 11:19:25,980&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&425&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '1', '$4': '0', '$5': '0', '$6': '0', '$10': '3', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '1', '$22': '1', '$23': '0', '$24': '100.000', '$25': '1000.000', '$26': '250', '$27': '3.000', '$30': '10000', '$31': '0', '$32': '0', '$100': '400.000', '$101': '400.000', '$102': '400.000', '$110': '5000.000', '$111': '5000.000', '$112': '5000.000', '$120': '300.000', '$121': '300.000', '$122': '300.000', '$130': '401.000', '$131': '301.000', '$132': '85.000'}
+2026-01-20 11:19:25,980&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-20 11:19:25,980&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-20 11:19:25,981&grbl_cnc_mill&INFO&mock&connect_to_mill&63&Connecting to the mill
+2026-01-20 11:19:26,185&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = -10.0, Y = -20.0, Z = -5.0
+2026-01-20 11:19:26,185&grbl_cnc_mill&INFO&mock&set_feed_rate&84&Setting feed rate to 5000
+2026-01-20 11:19:26,387&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = -10.0, Y = -20.0, Z = -5.0
+2026-01-20 11:19:26,588&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = -10.0, Y = -20.0, Z = -5.0
+2026-01-20 11:19:26,588&grbl_cnc_mill&DEBUG&driver&_log_target_coordinates&1035&Target coordinates: [-9.0, -20.0, -5.0]
+2026-01-20 11:19:26,588&grbl_cnc_mill&DEBUG&driver&execute_command&487&Command sent: G01 X-9.0 Y-20.0
+G01 Z-5.0
+2026-01-20 11:19:27,093&grbl_cnc_mill&DEBUG&driver&execute_command&525&Returned <<Idle|MPos:-12.0,-23.0,-8.0|Bf:15,127|FS:0,0>
+
+2026-01-20 11:19:27,298&grbl_cnc_mill&INFO&driver&current_coordinates&742&MPos coordinates: X = -9.0, Y = -20.0, Z = -5.0
+2026-01-20 11:19:27,298&grbl_cnc_mill&INFO&mock&disconnect&77&Disconnecting from the mill
+2026-01-20 11:19:27,298&grbl_cnc_mill&INFO&driver&__exit__&396&Exiting the mill context manager
+2026-01-23 10:55:04,865&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&440&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '2', '$4': '0', '$5': '0', '$6': '0', '$10': '1', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '0', '$22': '0', '$23': '0', '$24': '25.000', '$25': '500.000', '$26': '250', '$27': '1.000', '$30': '1000', '$31': '0', '$32': '0', '$100': '800.000', '$101': '800.000', '$102': '800.000', '$110': '1000.000', '$111': '1000.000', '$112': '600.000', '$120': '30.000', '$121': '30.000', '$122': '30.000', '$130': '280.000', '$131': '170.000', '$132': '40.000'}
+2026-01-23 10:55:04,865&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-23 10:55:04,865&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-23 10:56:15,999&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&449&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '2', '$4': '0', '$5': '0', '$6': '0', '$10': '1', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '0', '$22': '0', '$23': '0', '$24': '25.000', '$25': '500.000', '$26': '250', '$27': '1.000', '$30': '1000', '$31': '0', '$32': '0', '$100': '800.000', '$101': '800.000', '$102': '800.000', '$110': '1000.000', '$111': '1000.000', '$112': '600.000', '$120': '30.000', '$121': '30.000', '$122': '30.000', '$130': '280.000', '$131': '170.000', '$132': '40.000'}
+2026-01-23 10:56:16,000&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-23 10:56:16,000&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-23 10:56:53,669&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&449&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '2', '$4': '0', '$5': '0', '$6': '0', '$10': '1', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '0', '$22': '0', '$23': '0', '$24': '25.000', '$25': '500.000', '$26': '250', '$27': '1.000', '$30': '1000', '$31': '0', '$32': '0', '$100': '800.000', '$101': '800.000', '$102': '800.000', '$110': '1000.000', '$111': '1000.000', '$112': '600.000', '$120': '30.000', '$121': '30.000', '$122': '30.000', '$130': '280.000', '$131': '170.000', '$132': '40.000'}
+2026-01-23 10:56:53,669&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-23 10:56:53,669&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-23 10:57:46,061&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&449&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '2', '$4': '0', '$5': '0', '$6': '0', '$10': '1', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '0', '$22': '0', '$23': '0', '$24': '25.000', '$25': '500.000', '$26': '250', '$27': '1.000', '$30': '1000', '$31': '0', '$32': '0', '$100': '800.000', '$101': '800.000', '$102': '800.000', '$110': '1000.000', '$111': '1000.000', '$112': '600.000', '$120': '30.000', '$121': '30.000', '$122': '30.000', '$130': '280.000', '$131': '170.000', '$132': '40.000'}
+2026-01-23 10:57:46,062&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-23 10:57:46,062&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-23 10:58:17,027&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&449&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '2', '$4': '0', '$5': '0', '$6': '0', '$10': '1', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '0', '$22': '0', '$23': '0', '$24': '25.000', '$25': '500.000', '$26': '250', '$27': '1.000', '$30': '1000', '$31': '0', '$32': '0', '$100': '800.000', '$101': '800.000', '$102': '800.000', '$110': '1000.000', '$111': '1000.000', '$112': '600.000', '$120': '30.000', '$121': '30.000', '$122': '30.000', '$130': '280.000', '$131': '170.000', '$132': '40.000'}
+2026-01-23 10:58:17,027&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-23 10:58:17,027&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-23 10:58:50,118&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&449&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '2', '$4': '0', '$5': '0', '$6': '0', '$10': '1', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '0', '$22': '0', '$23': '0', '$24': '25.000', '$25': '500.000', '$26': '250', '$27': '1.000', '$30': '1000', '$31': '0', '$32': '0', '$100': '800.000', '$101': '800.000', '$102': '800.000', '$110': '1000.000', '$111': '1000.000', '$112': '600.000', '$120': '30.000', '$121': '30.000', '$122': '30.000', '$130': '280.000', '$131': '170.000', '$132': '40.000'}
+2026-01-23 10:58:50,118&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-23 10:58:50,118&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-23 11:11:12,022&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&449&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '2', '$4': '0', '$5': '0', '$6': '0', '$10': '1', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '0', '$22': '0', '$23': '0', '$24': '25.000', '$25': '500.000', '$26': '250', '$27': '1.000', '$30': '1000', '$31': '0', '$32': '0', '$100': '800.000', '$101': '800.000', '$102': '800.000', '$110': '1000.000', '$111': '1000.000', '$112': '600.000', '$120': '30.000', '$121': '30.000', '$122': '30.000', '$130': '280.000', '$131': '170.000', '$132': '40.000'}
+2026-01-23 11:11:12,022&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-23 11:11:12,022&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
+2026-01-23 11:11:36,503&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&449&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '2', '$4': '0', '$5': '0', '$6': '0', '$10': '1', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '0', '$22': '0', '$23': '0', '$24': '25.000', '$25': '500.000', '$26': '250', '$27': '1.000', '$30': '1000', '$31': '0', '$32': '0', '$100': '800.000', '$101': '800.000', '$102': '800.000', '$110': '1000.000', '$111': '1000.000', '$112': '600.000', '$120': '30.000', '$121': '30.000', '$122': '30.000', '$130': '280.000', '$131': '170.000', '$132': '40.000'}
+2026-01-23 11:11:36,503&grbl_cnc_mill&WARNING&driver&read_working_volume&144&Soft limits are not enabled in the mill config
+2026-01-23 11:11:36,503&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Using default working volume
