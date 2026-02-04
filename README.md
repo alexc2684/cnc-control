@@ -9,23 +9,26 @@ A standalone project for controlling a GRBL CNC mill.
    pip install -r requirements.txt
    ```
 
-2. Run the controller:
+## Experiment Protocol Engine
+
+This project features a robust **Protocol Engine** for defining and executing automated experiments on the CNC mill.
+
+### Key Features
+- **YAML-based Protocols**: Define experiments in simple YAML files (see `experiments/`).
+- **Safe Path Planning**: Automatic "Safe Z" travel and optimization to prevent collisions.
+- **Hardware Abstraction**: Clean separation between protocol logic and hardware drivers.
+
+### Running an Experiment
+1. **Configure Hardware**: Update `configs/genmitsu_3018_deck_config.yaml` with your machine bounds, camera source, and serial port.
+2. **Define Experiment**: Create a YAML file in `experiments/` (e.g., `experiments/my_experiment.yaml`).
+3. **Run**:
    ```bash
-   python main.py
+   python verify_experiment.py experiments/my_experiment.yaml
    ```
-   ```
 
-## Webcam Object Detection
-Run the YOLOv8 object detection on the webcam:
-```bash
-cd webcam_yolo
-pip install -r requirements.txt
-python main.py --source 0
-```
+## Development
 
-## Tests
-
-Run tests with:
+Run unit tests:
 ```bash
 pytest tests/
 ```

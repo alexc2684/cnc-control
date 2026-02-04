@@ -23,27 +23,32 @@ This repository contains code to control a CNC router (mill) using a Python-base
     - **Coordinates**: The machine typically operates in negative space relative to Home (0,0,0). e.g., X goes from 0 to -415.
 3.  **Offsets**: Tools have offsets managed by `ToolManager`.
 
-### Webcam YOLO Module
-- **`webcam_yolo/`**: Contains the object detection project using YOLOv8.
-    - **`main.py`**: Runs the live webcam feed with object detection.
-    - **Usage**: `python webcam_yolo/main.py --source <camera_index>` (0 is usually the Brio 101).
+### Protocol Engine (`src/protocol_engine`)
+A modular system for executing experiment sequences defined in code or YAML.
+
+- **`schema.py`**: Pydantic models acting as the "Source of Truth" for valid actions (`MoveAction`, `ImageAction`) and sequences. Supports loading from YAML.
+    - **Usage**: `ExperimentSequence.from_yaml("path/to/experiment.yaml")`
+- **`config.py`**: `DeckConfig` class managing machine bounds, safe heights, and hardware settings (Config Loading).
+    - **Config File**: `configs/genmitsu_3018_deck_config.yaml`
+- **`path_planner.py`**: Generates safe, optimized `PathPlan`s between waypoints.
+    - **Strategies**: 
+        - Naive (Lift -> Travel -> Lower)
+        - Optimized (Skip lift if safe, travel at start Z if safe)
+- **`compiler.py`**: Converts high-level `ExperimentSequence` into granular hardware `ProtocolSteps`.
+- **`camera.py`**: `Camera` class wrapping OpenCV for robust image capture (handles warmup, retries).
+- **`executor.py`**: `ProtocolExecutor` that orchestrates the `Mill` and `Camera` to run the compiled protocol.
+
+### Experiments
+- **`experiments/`**: Directory for storing YAML experiment definitions.
+- **`verify_experiment.py`**: Main runner script. Loads an experiment (YAML), compiles it, and executes it on the hardware.
+    - **Usage**: `python verify_experiment.py [experiment_file.yaml]`
+
+## Usage Guide for Agents
+
+1.  **Defining Experiments**: Create a YAML file in `experiments/` defining the sequence of moves and images.
+2.  **Running**: Execute `python verify_experiment.py experiments/your_experiment.yaml`.
+3.  **Connecting**: The system handles connection details (port, camera source) via `configs/genmitsu_3018_deck_config.yaml`.
 
 ## Environment
 - **Python**: 3.x
-- **Dependencies**: `pyserial`, `ultralytics`, `opencv-python`.
-
-## Path Planning (Needs Refinement)
-Current implementation uses naive lift-travel-lower strategy:
-1. Lift to safe_z
-2. Travel in XY
-3. Lower to target Z
-
-**Known limitations:**
-- No collision detection with deck objects
-- No path optimization (always lifts even for close moves)
-- No consideration of tool geometry
-
-**Future work:**
-- Implement collision avoidance using deck layout
-- Add optimized paths (skip lift if move is "safe")
-- Consider tool offsets in path planning
+- **Dependencies**: `pyserial`, `opencv-python`, `pydantic`, `pyyaml`.
