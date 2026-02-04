@@ -31,3 +31,19 @@ This repository contains code to control a CNC router (mill) using a Python-base
 ## Environment
 - **Python**: 3.x
 - **Dependencies**: `pyserial`, `ultralytics`, `opencv-python`.
+
+## Path Planning (Needs Refinement)
+Current implementation uses naive lift-travel-lower strategy:
+1. Lift to safe_z
+2. Travel in XY
+3. Lower to target Z
+
+**Known limitations:**
+- No collision detection with deck objects
+- No path optimization (always lifts even for close moves)
+- No consideration of tool geometry
+
+**Future work:**
+- Implement collision avoidance using deck layout
+- Add optimized paths (skip lift if move is "safe")
+- Consider tool offsets in path planning

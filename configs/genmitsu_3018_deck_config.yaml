@@ -1,0 +1,22 @@
+machine_bounds:
+  x_min: -280.0
+  x_max: 0.0
+  y_min: -170.0
+  y_max: 0.0
+  z_min: -40.0
+  z_max: 0.0
+
+safe_z_height: -5.0
+homing_enabled: false
+camera_source: 0
+serial_port: "/dev/cu.usbserial-2130"
+
+locations:
+  home:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  imaging_station:
+    x: -50.0
+    y: -50.0
+    z: -20.0

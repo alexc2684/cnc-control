@@ -110,10 +110,11 @@ class Mill:
         safe_move(x_coord, y_coord, z_coord, coordinates, tool, second_z_cord, second_z_cord_feed): Move the mill to the specified coordinates using only horizontal (xy) and vertical movements.
     """
 
-    def __init__(self):
+    def __init__(self, port: Optional[str] = None):
         # self.mill_config_file = "_configuration.json"
         self.logger_location = Path(__file__).parent / "logs"
         self.logger = set_up_mill_logger(self.logger_location)
+        self.port = port
         self.config = self.read_mill_config_file("_configuration.json")
         self.ser_mill: serial.Serial = None
         self.homed = False
@@ -208,7 +209,7 @@ class Mill:
         timeout = 2 # Reduced timeout for faster scanning
         
         # Priority port requested by user
-        priority_port = "/dev/cu.usbserial-1130"
+        priority_port = "/dev/cu.usbserial-2130"
         
         # Create a list starting with the priority port if it exists, roughly speaking
         # Actually, we can just forcefully check this port first or only this port if found.
@@ -406,7 +407,7 @@ class Mill:
     def __enter__(self):
         """Enter the context manager"""
         # Connect to mill with any port specified during object creation
-        self.connect_to_mill()
+        self.connect_to_mill(port=self.port)
         self.set_feed_rate(5000)
 
         # Optional auto-homing behavior that can be controlled by a property
