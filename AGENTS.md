@@ -23,6 +23,11 @@ This repository contains code to control a CNC router (mill) using a Python-base
     - **Coordinates**: The machine typically operates in negative space relative to Home (0,0,0). e.g., X goes from 0 to -415.
 3.  **Offsets**: Tools have offsets managed by `ToolManager`.
 
+### Webcam YOLO Module
+- **`webcam_yolo/`**: Contains the object detection project using YOLOv8.
+    - **`main.py`**: Runs the live webcam feed with object detection.
+    - **Usage**: `python webcam_yolo/main.py --source <camera_index>` (0 is usually the Brio 101).
+
 ## Environment
 - **Python**: 3.x
-- **Dependencies**: `pyserial` (implicit in usage), `numpy` (unverified but common).
+- **Dependencies**: `pyserial`, `ultralytics`, `opencv-python`.

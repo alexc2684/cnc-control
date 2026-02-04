@@ -13,6 +13,15 @@ A standalone project for controlling a GRBL CNC mill.
    ```bash
    python main.py
    ```
+   ```
+
+## Webcam Object Detection
+Run the YOLOv8 object detection on the webcam:
+```bash
+cd webcam_yolo
+pip install -r requirements.txt
+python main.py --source 0
+```
 
 ## Tests
 
