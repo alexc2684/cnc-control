@@ -16,7 +16,7 @@ def main():
     print("Initializing Experiment Engine Verification...")
     
     # 1. Load Config
-    config_path = Path("configs/deck_config.yaml")
+    config_path = Path("configs/genmitsu_3018_deck_config.yaml")
     if not config_path.exists():
         print(f"Error: Config file not found at {config_path}")
         return
