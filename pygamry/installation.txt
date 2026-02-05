@@ -1,0 +1,17 @@
+First, download or clone the pygamry repository to your machine.
+
+Anaconda/Conda users:
+1. Launch Anaconda Prompt (Windows) or Terminal (Mac).
+2. Create a new conda environment from the provided configuration file:
+	conda env create -f gamry.yml.
+3. Activate the new environment:
+	conda activate gamry
+4. Install pygamry in development mode. Navigate to the top-level pygamry directory that containts the setup.py file, then install it with with:
+	conda develop .
+
+Troubleshooting note: it seems that "conda develop ." does not always work. If you find that you cannot import hybrid-drt when running the tutorial (ModuleNotFoundError), you can repeat step 4 above using "pip install ." instead of "conda develop .".
+
+Pip users:
+1. Launch Command Prompt (Windows) or Terminal (Mac).
+2. Next, install pygamry and all dependecies: navigate to the top-level pygamry directory that contains the setup.py file, then run the following command to install the package:
+	pip install .
