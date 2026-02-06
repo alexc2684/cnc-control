@@ -1,0 +1,29 @@
+name: Full Performance
+workflow: measure_full_performance
+runtime:
+  data_path: "."
+  file_suffix: "FULL"
+  num_loops: 1
+parameters:
+  ocp_duration: 600.0
+  ocp_sample_period: 1.0
+  eis_mode: pot
+  eis_max_freq: 1000000.0
+  eis_min_freq: 0.1
+  eis_ppd: 10
+  eis_sac: 0.01
+  eis_sdc: 0.0
+  eis_z_guess: 5.0
+  pwrpol_direction: both
+  pwrpol_i_final: 1.0
+  pwrpol_scan_rate: 0.001
+  pwrpol_sample_period: 5.0
+  pwrpol_v_min: 0.4
+  pwrpol_v_max: 1.5
+  hybrid_step_type: triple
+  hybrid_i_init: 0.0
+  hybrid_i_rms: 0.01
+  hybrid_v_rms: 0.01
+  hybrid_eis_mode: galv
+  staircase_num_steps: 20
+  staircase_direction: both

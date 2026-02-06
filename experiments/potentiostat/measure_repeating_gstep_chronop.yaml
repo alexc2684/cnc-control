@@ -1,0 +1,12 @@
+name: Repeating GeoStep Chronopotentiometry
+workflow: measure_repeating_gstep_chronop
+runtime:
+  data_path: "."
+  file_suffix: "CHRONOP_GSTEP"
+parameters:
+  repeats: 5
+  chrono_v_rms: 0.01
+  chrono_s_init: 0.0
+  chrono_t_init: 0.1
+  chrono_t_step: 1.0
+  chrono_t_sample: 0.0001

@@ -1,0 +1,23 @@
+name: Charge Hybrid
+workflow: charge_hybrid
+runtime:
+  data_path: "."
+  file_suffix: "CHARGE_HYBRID"
+parameters:
+  max_repeats: 5
+  duration: 3600.0
+  condition_time: 0.0
+  condition_t_sample: 0.001
+  stop_v_min: -1.0
+  stop_v_max: 1.0
+  voltage_finish: false
+  finish_v: 0.0
+  finish_i_thresh: 0.005
+  finish_i_max: 1.0
+  finish_t_sample: 1.0
+  finish_duration: 3600.0
+  finish_rest_time: 2.0
+  hybrid_step_type: triple
+  hybrid_i_init: 0.1
+  hybrid_i_rms: 0.01
+  hybrid_v_rms: 0.01

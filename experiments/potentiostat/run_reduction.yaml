@@ -1,0 +1,9 @@
+name: Run Reduction
+workflow: run_reduction
+runtime:
+  data_path: "."
+  file_suffix: "RED"
+parameters:
+  reduction_config_file: ./reduction_config.csv
+  ocp_duration: 600.0
+  ocp_sample_period: 1.0
