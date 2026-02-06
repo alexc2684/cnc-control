@@ -1,0 +1,15 @@
+name: Repeating Hybrid
+workflow: measure_repeating_hybrid
+runtime:
+  data_path: "."
+  file_suffix: "HYBRID_REPEAT"
+parameters:
+  repeats: 3
+  condition_time: 0.0
+  condition_t_sample: 0.001
+  stop_v_min: -1.0
+  stop_v_max: 1.0
+  hybrid_step_type: triple
+  hybrid_i_init: 0.0
+  hybrid_i_rms: 0.01
+  hybrid_v_rms: 0.01

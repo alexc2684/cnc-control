@@ -958,3 +958,64 @@ G01 Z0.0
 G01 Z0.0
 2026-02-04 16:04:07,196&grbl_cnc_mill&DEBUG&driver&execute_command&557&Returned <Idle|MPos:0.000,0.000,0.000|FS:0,0>
 
+2026-02-04 16:13:29,010&grbl_cnc_mill&DEBUG&driver&read_mill_config_file&450&Mill config loaded: {'$0': '10', '$1': '25', '$2': '0', '$3': '2', '$4': '0', '$5': '0', '$6': '0', '$10': '1', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '0', '$22': '0', '$23': '0', '$24': '25.000', '$25': '500.000', '$26': '250', '$27': '1.000', '$30': '1000', '$31': '0', '$32': '0', '$100': '800.000', '$101': '800.000', '$102': '800.000', '$110': '1000.000', '$111': '1000.000', '$112': '600.000', '$120': '30.000', '$121': '30.000', '$122': '30.000', '$130': '280.000', '$131': '170.000', '$132': '40.000'}
+2026-02-04 16:13:29,012&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Soft limits are not enabled in the mill config
+2026-02-04 16:13:29,012&grbl_cnc_mill&WARNING&driver&read_working_volume&146&Using default working volume
+2026-02-04 16:13:29,014&grbl_cnc_mill&INFO&driver&locate_mill_over_serial&236&Attempting connection to port: /dev/cu.usbserial-2130 at 115200 baud
+2026-02-04 16:13:29,124&grbl_cnc_mill&INFO&driver&locate_mill_over_serial&257&Querying the mill for status
+2026-02-04 16:13:32,657&grbl_cnc_mill&INFO&driver&locate_mill_over_serial&275&Raw response: [b'\r\n', b"Grbl 1.1f ['$' for help]\r\n"]
+2026-02-04 16:13:32,658&grbl_cnc_mill&INFO&driver&locate_mill_over_serial&285&Connected successfully to /dev/cu.usbserial-2130 at 115200
+2026-02-04 16:13:32,659&grbl_cnc_mill&INFO&driver&connect_to_mill&320&Reusing open serial connection from detection
+2026-02-04 16:13:32,659&grbl_cnc_mill&INFO&driver&connect_to_mill&337&Serial connection to mill opened successfully
+2026-02-04 16:13:32,659&grbl_cnc_mill&INFO&driver&connect_to_mill&343&Mill connected: True
+2026-02-04 16:13:32,660&grbl_cnc_mill&INFO&driver&read_mill_config&482&Reading mill config
+2026-02-04 16:13:32,660&grbl_cnc_mill&DEBUG&driver&execute_command&512&Command sent: $$
+2026-02-04 16:13:32,692&grbl_cnc_mill&DEBUG&driver&execute_command&529&Returned ['$0=10', '$1=25', '$2=0', '$3=2', '$4=0', '$5=0', '$6=0', '$10=1', '$11=0.010', '$12=0.002', '$13=0', '$20=0', '$21=0', '$22=0', '$23=0', '$24=25.000', '$25=500.000', '$26=250', '$27=1.000', '$30=1000', '$31=0', '$32=0', '$100=800.000', '$101=800.000', '$102=800.000', '$110=1000.000', '$111=1000.000', '$112=600.000', '$120=30.000', '$121=30.000', '$122=30.000', '$130=280.000', '$131=170.000', '$132=40.000']
+2026-02-04 16:13:32,693&grbl_cnc_mill&INFO&driver&execute_command&533&Parsing settings from: ['$0=10', '$1=25', '$2=0', '$3=2', '$4=0', '$5=0', '$6=0', '$10=1', '$11=0.010', '$12=0.002', '$13=0', '$20=0', '$21=0', '$22=0', '$23=0', '$24=25.000', '$25=500.000', '$26=250', '$27=1.000', '$30=1000', '$31=0', '$32=0', '$100=800.000', '$101=800.000', '$102=800.000', '$110=1000.000', '$111=1000.000', '$112=600.000', '$120=30.000', '$121=30.000', '$122=30.000', '$130=280.000', '$131=170.000', '$132=40.000']
+2026-02-04 16:13:32,693&grbl_cnc_mill&DEBUG&driver&read_mill_config&487&Mill config: {'$0': '10', '$1': '25', '$2': '0', '$3': '2', '$4': '0', '$5': '0', '$6': '0', '$10': '1', '$11': '0.010', '$12': '0.002', '$13': '0', '$20': '0', '$21': '0', '$22': '0', '$23': '0', '$24': '25.000', '$25': '500.000', '$26': '250', '$27': '1.000', '$30': '1000', '$31': '0', '$32': '0', '$100': '800.000', '$101': '800.000', '$102': '800.000', '$110': '1000.000', '$111': '1000.000', '$112': '600.000', '$120': '30.000', '$121': '30.000', '$122': '30.000', '$130': '280.000', '$131': '170.000', '$132': '40.000'}
+2026-02-04 16:13:32,694&grbl_cnc_mill&INFO&driver&write_mill_config_file&503&Mill config written to file
+2026-02-04 16:13:32,694&grbl_cnc_mill&WARNING&driver&read_working_volume&145&Soft limits are not enabled in the mill config
+2026-02-04 16:13:32,694&grbl_cnc_mill&WARNING&driver&read_working_volume&146&Using default working volume
+2026-02-04 16:13:34,695&grbl_cnc_mill&DEBUG&driver&check_for_alarm_state&362&Status: 
+2026-02-04 16:13:34,695&grbl_cnc_mill&WARNING&driver&check_for_alarm_state&364&Initial status reading from the mill is blank
+2026-02-04 16:13:34,695&grbl_cnc_mill&WARNING&driver&check_for_alarm_state&365&Querying the mill for status
+2026-02-04 16:13:36,900&grbl_cnc_mill&DEBUG&driver&check_for_alarm_state&368&Status: <Idle|MPos:0.000,0.000,0.000|FS:0,0|WCO:0.000,0.000,0.000>
+
+2026-02-04 16:13:36,900&grbl_cnc_mill&DEBUG&driver&execute_command&512&Command sent: F5000
+2026-02-04 16:13:39,113&grbl_cnc_mill&DEBUG&driver&execute_command&557&Returned <Idle|MPos:0.000,0.000,0.000|FS:0,0|Ov:100,100,100>
+
+2026-02-04 16:13:40,789&grbl_cnc_mill&INFO&driver&current_coordinates&777&MPos coordinates: X = 1.0, Y = 1.0, Z = 1.0
+2026-02-04 16:13:40,789&grbl_cnc_mill&DEBUG&driver&_log_target_coordinates&1070&Target coordinates: [-150.0, -100.0, 0.0]
+2026-02-04 16:13:40,789&grbl_cnc_mill&DEBUG&driver&execute_command&512&Command sent: G01 X-150.0 Y-100.0
+G01 Z0.0
+2026-02-04 16:13:51,818&grbl_cnc_mill&DEBUG&driver&execute_command&557&Returned <Idle|MPos:-150.000,-100.000,0.000|FS:0,0>
+
+2026-02-04 16:13:52,025&grbl_cnc_mill&INFO&driver&current_coordinates&777&MPos coordinates: X = -149.0, Y = -99.0, Z = 1.0
+2026-02-04 16:13:52,025&grbl_cnc_mill&DEBUG&driver&_log_target_coordinates&1070&Target coordinates: [-150.0, -100.0, -35.0]
+2026-02-04 16:13:52,025&grbl_cnc_mill&DEBUG&driver&execute_command&512&Command sent: G01 X-150.0 Y-100.0
+G01 Z-35.0
+2026-02-04 16:13:56,441&grbl_cnc_mill&DEBUG&driver&execute_command&557&Returned <Idle|MPos:-150.000,-100.000,-35.000|FS:0,0|WCO:0.000,0.000,0.000>
+
+2026-02-04 16:13:56,664&grbl_cnc_mill&INFO&driver&current_coordinates&777&MPos coordinates: X = -149.0, Y = -99.0, Z = -34.0
+2026-02-04 16:13:56,665&grbl_cnc_mill&DEBUG&driver&_log_target_coordinates&1070&Target coordinates: [-150.0, -100.0, -5.0]
+2026-02-04 16:13:56,665&grbl_cnc_mill&DEBUG&driver&execute_command&512&Command sent: G01 X-150.0
+G01 Y-100.0
+G01 Z-5.0
+2026-02-04 16:14:01,089&grbl_cnc_mill&DEBUG&driver&execute_command&557&Returned <Idle|MPos:-150.000,-100.000,-5.000|FS:0,0>
+
+2026-02-04 16:14:01,291&grbl_cnc_mill&INFO&driver&current_coordinates&777&MPos coordinates: X = -149.0, Y = -99.0, Z = -4.0
+2026-02-04 16:14:01,291&grbl_cnc_mill&DEBUG&driver&_log_target_coordinates&1070&Target coordinates: [0.0, 0.0, -5.0]
+2026-02-04 16:14:01,291&grbl_cnc_mill&DEBUG&driver&execute_command&512&Command sent: G01 X0.0 Y0.0
+G01 Z-5.0
+2026-02-04 16:14:12,318&grbl_cnc_mill&DEBUG&driver&execute_command&557&Returned <Idle|MPos:0.000,0.000,-5.000|FS:0,0>
+
+2026-02-04 16:14:12,523&grbl_cnc_mill&INFO&driver&current_coordinates&777&MPos coordinates: X = 1.0, Y = 1.0, Z = -4.0
+2026-02-04 16:14:12,523&grbl_cnc_mill&DEBUG&driver&_log_target_coordinates&1070&Target coordinates: [0.0, 0.0, 0.0]
+2026-02-04 16:14:12,523&grbl_cnc_mill&DEBUG&driver&execute_command&512&Command sent: G01 X0.0 Y0.0
+G01 Z0.0
+2026-02-04 16:14:14,738&grbl_cnc_mill&DEBUG&driver&execute_command&557&Returned <Idle|MPos:0.000,0.000,0.000|FS:0,0|Ov:100,100,100>
+
+2026-02-04 16:14:14,790&grbl_cnc_mill&INFO&driver&disconnect&425&Disconnecting from the mill
+2026-02-04 16:14:17,298&grbl_cnc_mill&INFO&driver&disconnect&434&Mill connected: False
+2026-02-04 16:14:17,298&grbl_cnc_mill&INFO&driver&disconnect&439&Serial connection to mill closed successfully
+2026-02-04 16:14:17,298&grbl_cnc_mill&INFO&driver&__exit__&421&Exiting the mill context manager

@@ -1,0 +1,10 @@
+name: Repeating DStep Chronopotentiometry
+workflow: measure_repeating_dstep_chronop
+runtime:
+  data_path: "."
+  file_suffix: "CHRONOP_DSTEP"
+parameters:
+  repeats: 5
+  chrono_step_type: dstep
+  chrono_v_rms: 0.01
+  chrono_s_init: 0.0

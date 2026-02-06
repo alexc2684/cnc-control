@@ -1,0 +1,21 @@
+name: Battery Hybrid Discharge Charge
+workflow: batt_hybrid_discharge_charge
+runtime:
+  data_path: "."
+  file_suffix: "BATT_HYBRID"
+parameters:
+  repeats: 3
+  condition_time: 0.0
+  condition_t_sample: 0.001
+  stop_v_min: -1.0
+  stop_v_max: 1.0
+  charge_voltage_finish: false
+  charge_finish_v: 0.0
+  charge_finish_i_thresh: 0.001
+  charge_finish_t_sample: 1.0
+  charge_finish_duration: 3600.0
+  charge_finish_rest_time: 60.0
+  hybrid_step_type: triple
+  hybrid_i_init: 0.1
+  hybrid_i_rms: 0.01
+  hybrid_v_rms: 0.01

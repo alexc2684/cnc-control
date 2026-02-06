@@ -1,0 +1,12 @@
+name: Equilibrate
+workflow: equilibrate
+runtime:
+  data_path: "."
+  file_suffix: "EQUIL"
+parameters:
+  equil_mode: pot
+  equil_duration: 600.0
+  equil_sample_period: 0.01
+  equil_window_seconds: 15.0
+  equil_slope_thresh: 0.25
+  pequil_vdc: -0.1

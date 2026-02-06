@@ -1,0 +1,20 @@
+name: Measure Polarization Map
+workflow: measure_pol_map
+runtime:
+  data_path: "."
+  file_suffix: "POLMAP"
+  num_loops: 1
+parameters:
+  ocp_duration: 600.0
+  ocp_sample_period: 1.0
+  hybrid_step_type: triple
+  hybrid_i_init: 0.0
+  hybrid_i_rms: 0.01
+  hybrid_v_rms: 0.01
+  hybrid_eis_mode: galv
+  staircase_num_steps: 20
+  staircase_direction: both
+  staircase_v_min: 0.4
+  staircase_v_max: 1.5
+  disable_vsweep: false
+  vsweep_file: none

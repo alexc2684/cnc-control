@@ -32,3 +32,23 @@ Run unit tests:
 ```bash
 pytest tests/
 ```
+
+## Potentiostat Protocols (pygamry Refactor)
+
+The legacy `pygamry/measure_scripts/*.py` entrypoints are now represented as YAML workflows.
+
+- YAML workflows: `experiments/potentiostat/*.yaml`
+- Schema/execution package: `src/potentiostat_protocol/`
+- Runner: `verify_potentiostat_experiment.py`
+
+### Run a Potentiostat Workflow
+
+Dry-run (safe, no hardware):
+```bash
+python verify_potentiostat_experiment.py experiments/potentiostat/measure_basic_performance.yaml --backend dry-run
+```
+
+Real hardware execution:
+```bash
+python verify_potentiostat_experiment.py experiments/potentiostat/measure_basic_performance.yaml --backend gamry
+```

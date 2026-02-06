@@ -1,0 +1,15 @@
+name: Measure Hybrid
+workflow: measure_hybrid
+runtime:
+  data_path: "."
+  file_suffix: "HYBRID"
+  num_loops: 1
+parameters:
+  hybrid_step_type: triple
+  hybrid_i_init: 0.0
+  hybrid_i_rms: 0.01
+  hybrid_v_rms: 0.01
+  hybrid_t_init: 0.1
+  hybrid_t_step: 1.0
+  hybrid_t_sample: 0.0001
+  hybrid_eis_mode: galv

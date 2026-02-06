@@ -1,0 +1,16 @@
+name: Measure Hybrid Staircase
+workflow: measure_hybrid_staircase
+runtime:
+  data_path: "."
+  file_suffix: "HYBRID_STAIR"
+  num_loops: 1
+parameters:
+  hybrid_step_type: triple
+  hybrid_i_init: 0.0
+  hybrid_i_rms: 0.01
+  hybrid_v_rms: 0.01
+  hybrid_eis_mode: galv
+  staircase_num_steps: 20
+  staircase_direction: both
+  staircase_v_min: 0.4
+  staircase_v_max: 1.5

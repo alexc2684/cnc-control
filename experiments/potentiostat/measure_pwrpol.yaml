@@ -1,0 +1,14 @@
+name: Measure Power Polarization
+workflow: measure_pwrpol
+runtime:
+  data_path: "."
+  file_suffix: "PWRPOL"
+  num_loops: 1
+parameters:
+  pwrpol_direction: both
+  pwrpol_i_final: 1.0
+  pwrpol_scan_rate: 0.001
+  pwrpol_sample_period: 5.0
+  pwrpol_v_min: 0.4
+  pwrpol_v_max: 1.5
+  pwrpol_rest_time: 60.0

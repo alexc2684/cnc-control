@@ -1,0 +1,17 @@
+name: Measure Voltage Sweep
+workflow: measure_vsweep
+runtime:
+  data_path: "."
+  file_suffix: "VSWEEP"
+  num_loops: 1
+parameters:
+  ocp_duration: 600.0
+  ocp_sample_period: 1.0
+  vsweep_v_rms: 0.01
+  vsweep_t_init: 1.0
+  vsweep_t_sample: 0.01
+  vsweep_t_step: 5.0
+  vsweep_num_steps: 20
+  vsweep_direction: both
+  vsweep_v_min: 0.4
+  vsweep_v_max: 1.5

@@ -1,0 +1,9 @@
+name: Measure OCP
+workflow: measure_ocp
+runtime:
+  data_path: "."
+  file_suffix: "OCP"
+  num_loops: 1
+parameters:
+  ocp_duration: 600.0
+  ocp_sample_period: 1.0

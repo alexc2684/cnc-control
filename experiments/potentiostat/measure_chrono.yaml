@@ -1,0 +1,12 @@
+name: Measure Chrono
+workflow: measure_chrono
+runtime:
+  data_path: "."
+  file_suffix: "CHRONO"
+parameters:
+  chrono_mode: galv
+  chrono_step_type: dstep
+  chrono_v_rms: 0.01
+  chrono_s_init: 0.0
+  chrono_t_init: 0.1
+  chrono_t_sample: 0.0001

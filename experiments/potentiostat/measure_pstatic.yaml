@@ -1,0 +1,18 @@
+name: Measure Potentiostatic Hold
+workflow: measure_pstatic
+runtime:
+  data_path: "."
+  file_suffix: "PSTATIC"
+  num_loops: 1
+parameters:
+  pstatic_vdc: 0.8
+  pstatic_duration: 600.0
+  pstatic_sample_period: 1.0
+  pstatic_vdc_vs_vref: false
+  eis_mode: pot
+  eis_max_freq: 1000000.0
+  eis_min_freq: 0.1
+  eis_ppd: 10
+  eis_sac: 0.01
+  eis_sdc: 0.0
+  eis_z_guess: 5.0
